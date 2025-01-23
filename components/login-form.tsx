@@ -24,7 +24,7 @@ export function LoginForm({
           <form
             action={async () => {
               "use server";
-              await signIn("spotify");
+              await signIn("spotify", { redirectTo: "/home" });
             }}
           >
             <div className="grid gap-6">
